@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imagen/WhatsApp Image 2026-06-03 at 1.22.17 PM.jpeg">
+</head>
+<body id="top">
+    <div class="envio">
+        <h5><u>Envios gratis para todo el país</u></h5>
+    </div>
+
+    <header>
+        <nav id="inicio">
+            <div class="container">
+                <img src="imagen/WhatsApp Image 2026-06-03 at 1.22.17 PM.jpeg" alt="Logo tienda" class="logo">
+                <h1>WILLY SHOES</h1>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#top">Inicio</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#damas">Damas</a></li>
+                    <li><a href="#caballeros">Caballeros</a></li>
+                    <li><a href="#niños">Niños</a></li>
+                    <li><a href="#carrito" onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"></i> Carrito <span id="cart-count" class="cart-count">0</span></a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slider-contenedor">
+        <div class="slide fade"><img src="https://previews.123rf.com/images/hvostik/hvostik2003/hvostik200300097/142143087-mega-sale-template-for-advertising-and-promotion-sports-shoe-in-the-seller%C3%A2%E2%82%AC%E2%84%A2s-hand-discount-on.jpg" alt="Imagen 1"></div>
+        <div class="slide fade"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0uOHpBz4PzcZPUO2VZ8li_pDIsr2ca8wTVQ&s" alt="Imagen 2"></div>
+        <div class="slide fade"><img src="https://img.magnific.com/psd-gratis/venta-zapatos-diseno-plantillas-publicaciones-redes-sociales_505751-4472.jpg?semt=ais_hybrid&w=740&q=80" alt="Imagen 3"></div>
+    </div>
+
+    <section class="carrusel">
+            <h2>Nuestras Marcas</h2>
+            <div class="carrusel-container">
+                <div class="carrusel-track">
+                    <img src="https://media.glassdoor.com/sqlm/10692/adidas-squarelogo-1499169651022.png" alt="Marca 1">
+                    <img src="https://i.pinimg.com/236x/8e/b6/5b/8eb65b89673f0d1393f7261e4b286c41.jpg" alt="Marca 2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaY2ghLgrzQmdKv_QpqRsWFZalslHIyTtQIw&s" alt="Marca 3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXkePEXw_Ta1_enBwXsam-6oMHGpueyC8HXg&s" alt="marca 4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5cbUBEyJ5StnzF2VPLeKDpNzZ5m6Rjl8Ug&s" alt="marca5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPLoIeCg4tC__073YRN-HvPdC1qsLIpPVjrg&s" alt="marca 6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCjQKVC28cUe_4EAPL5oBngM6CyftkqBKXMg&s" alt="marca 7">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNOhHZ-0c3De3DFuwuosHkDnJRDwhDb-tLdw&s" alt="marca 8">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvuZOjNIMQvuj1ZsK6VaV0lBLn0vgFdTP9zg&s" alt="marca 9">
+                    <!-- Más marcas -->
+                </div>
+            </div>
+    </section>
+
+    <section class="articulos">
+        <h2 id="promociones">Descuentos de la semana</h2>
+        <div class="productos-grid">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">20% de descuento</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_789636-MLV51125927230_082022-O.webp" alt="Zapato 1" class="base-img">
+                    <img src="https://images.tokopedia.net/img/cache/700/product-1/2020/5/14/5451890/5451890_8ee59c2e-8a40-4e3a-9497-478cbd6c5124_2048_2048.jpg.webp" alt="Vista alterna de los zapatos" class="hover-img">
+                </div>
+                <h3>Zapato Deportivo</h3>
+                <p>Clásico deportivo </p>
+                <p>Tallas: 36, 37, 38, 39, 40</p>
+                <p class="precio">$20.00 Antes: <s>30$</s></p>
+                <button onclick="agregarAlCarrito('Zapato Deportivo', 20)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">20% de descuento</span>
+                    <img src="https://via.placeholder.com/600x400?text=Zapato+2" alt="Zapato 2" class="base-img">
+                    <img src="https://via.placeholder.com/600x400?text=Vista+2+Zapato+2" alt="Vista alterna de los zapatos" class="hover-img">
+                </div>
+                <h3>Zapato Casual</h3>
+                <p>Estilo urbano cómodo para todo el día.</p>
+                <p class="precio">$95.00</p>
+                <button onclick="agregarAlCarrito('Zapato Casual', 95)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">20% de descuento</span>
+                    <img src="https://via.placeholder.com/600x400?text=Zapato+3" alt="Zapato 3" class="base-img">
+                    <img src="https://via.placeholder.com/600x400?text=Vista+2+Zapato+3" alt="Vista alterna de los zapatos" class="hover-img">
+                </div>
+                <h3>Zapato de Vestir</h3>
+                <p>Elegante para ocasiones formales.</p>
+                <p class="precio">$130.00</p>
+                <button onclick="agregarAlCarrito('Zapato de Vestir', 130)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">20% de descuento</span>
+                    <img src="https://via.placeholder.com/600x400?text=Zapato+4" alt="Zapato 4" class="base-img">
+                    <img src="https://via.placeholder.com/600x400?text=Vista+2+Zapato+4" alt="Vista alterna de los zapatos" class="hover-img">
+                </div>
+                <h3>Zapato Casual Premium</h3>
+                <p>Combinación de confort y diseño exclusivo.</p>
+                <p class="precio">$145.00</p>
+                <button onclick="agregarAlCarrito('Zapato Casual Premium', 145)">Agregar al Carrito</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="promo">
+        <div class="container">
+            <img src="imagen/WhatsApp Image 2026-06-03 at 1.22.17 PM.jpeg" alt="Imagen Promocional">
+            <div class="promo-text">
+                <h2>Te mereces lo mejor, por eso nosotros te lo ofrecemos!</h2>
+                <p>No sigas buscando en otros sitios, aquí en nuestra tienda esta todo lo que buscas o has soñado para ti, te ofrecemos productos al mayor y al detal</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pasos">
+        <div class="container">
+            <h2>Pasos para comprar</h2>
+            <div class="pasos-grid">
+                <article class="paso-card">
+                    <span class="paso-number">1</span>
+                    <h3>Selecciona tus productos</h3>
+                    <p>Haz click sobre el o los productos que deseas comprar.</p>
+                </article>
+                <article class="paso-card">
+                    <span class="paso-number">2</span>
+                    <h3>Ve al carrito</h3>
+                    <p>Haz click en el icono del carrito para revisar tu selección.</p>
+                </article>
+                <article class="paso-card">
+                    <span class="paso-number">3</span>
+                    <h3>Verifica la información</h3>
+                    <p>Revisa los productos, cantidades y precios antes de continuar.</p>
+                </article>
+                <article class="paso-card">
+                    <span class="paso-number">4</span>
+                    <h3>Ingresa tu dirección</h3>
+                    <p>Escribe tu dirección de envío en el campo correspondiente.</p>
+                </article>
+                <article class="paso-card">
+                    <span class="paso-number">5</span>
+                    <h3>Envía el recibo</h3>
+                    <p>Presiona el botón de enviar para recibir el recibo por WhatsApp.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="articulos">
+        <h2 id="damas">Damas</h2>
+        <div class="productos-grid">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="articulos">
+        <h2 id="caballeros">Caballeros</h2>
+        <div class="productos-grid">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="articulos">
+        <h2 id="niños">Niños</h2>
+        <div class="productos-grid">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="" alt="Zapatillas Deportivas" class="base-img">
+                    <img src="" alt="Vista alterna de zapatillas" class="hover-img">
+                </div>
+                <h3>Zapatos</h3>
+                <p>descripcion zapatos</p>
+                <p>Tallas disponibles: </p>
+                <p class="precio">$</p>
+                <button onclick="agregarAlCarrito('zapato', 1)">Agregar al Carrito</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="comentarios">
+            <h2>Comentarios de Clientes</h2>
+            <div class="comentario">
+                <p>"Excelente calidad y servicio." - Cliente 1</p>
+                <p>Cliente1</p>
+            </div>
+            <div class="comentario">
+                <p>"Excelente calidad y servicio." - Cliente 2</p>
+                <p>Cliente 2</p>
+            </div>
+            <div class="comentario">
+                <p>"Excelente calidad y servicio." - Cliente 3</p>
+                <p>Cliente 3</p>
+            </div>
+            
+            <!-- Más comentarios -->
+    </section>
+
+    <footer class="professional-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Willy Shoes</h3>
+                <p>Calidad al mejor precio</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Tiktok</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#damas">Damas</a></li>
+                    <li><a href="#caballeros">Caballeros</a></li>
+                    <li><a href="#niños">Niños</a></li>
+                    <li><a href="#carrito" onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"></i> Carrito <span id="cart-count" class="cart-count">0</span></a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>📞 +58(414-021-6722)</li>
+                    <li>✉️ willyshoes7@gmail.com</li>
+                    <li>📍 Charallave, estado Miranda</li>
+                    <li>🕒 Lun-Vie: 9AM-6PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Suscríbete para recibir ofertas exclusivas</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 willyshoes. todos los derechos reservados | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        </div>
+    </footer>
+
+
+
+    <div id="carrito-panel">
+        <div class="carrito-content">
+            <button class="close-carrito" onclick="cerrarCarrito()">×</button>
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-items"></div>
+            <div class="carrito-footer">
+                <label for="direccion-envio">Dirección de envío</label>
+                <textarea id="direccion-envio" placeholder="Ingresa tu dirección"></textarea>
+                <div class="carrito-total" id="carrito-total">$0.00</div>
+                <div class="carrito-actions">
+                    <button type="button" onclick="generarRecibo()">Enviar por WhatsApp</button>
+                    <button type="button" onclick="vaciarCarrito()">Vaciar carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/584140216722?text=Hola%20quiero%20hacer%20una%20compra" class="whatsapp-float" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+
+</body>
+
+<script src="script.js"></script>
+</html>
