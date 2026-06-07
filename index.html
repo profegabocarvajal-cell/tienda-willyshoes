@@ -150,8 +150,23 @@
                 </article>
                 <article class="paso-card">
                     <span class="paso-number">5</span>
+                    <h3>Talla de calzado</h3>
+                    <p>Selecciona tu talla de calzado</p>
+                </article>
+                <article class="paso-card">
+                    <span class="paso-number">6</span>
+                    <h3>Método de pago</h3>
+                    <p>Selecciona el método de pago que más te convenga.</p>
+                </article>
+                <article class="paso-card">
+                    <span class="paso-number">7</span>
                     <h3>Envía el recibo</h3>
                     <p>Presiona el botón de enviar para recibir el recibo por WhatsApp.</p>
+                </article>
+                <article class="paso-card">
+                    <span class="paso-number">8</span>
+                    <h3>Compras al mayor</h3>
+                    <p>Si necesitas comprar al mayor, comunicate con nostros al WhatsApp.</p>
                 </article>
             </div>
         </div>
@@ -479,6 +494,16 @@
                     <option value="43">43</option>
                     <option value="44">44</option>
                     <option value="45">45</option>
+                </select>
+
+                <label for="metodo-pago">Método de pago</label>
+                <select id="metodo-pago" onchange="cambiarMetodoPago(this.value)">
+                    <option value="" disabled selected>Selecciona un método de pago</option>
+                    <option value="Pago móvil">Pago móvil</option>
+                    <option value="Transferencias en divisas">Transferencias en divisas</option>
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="Zelle">Zelle</option>
                 </select>
 
                 <div class="carrito-total" id="carrito-total">$0.00</div>

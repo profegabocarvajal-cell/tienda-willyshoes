@@ -25,11 +25,14 @@ window.addEventListener('scroll', () => {
 });
 
     const CART_KEY = 'miTiendaCarrito';
+    const PAYMENT_KEY = 'miTiendaMetodoPago';
     const WHATSAPP_NUMBER = '+584140216722'; // Cambia este número al número de WhatsApp de tu tienda
     let carrito = cargarCarrito();
+    let metodoPago = cargarMetodoPago();
 
     actualizarCarrito();
     actualizarContadorCarrito();
+    actualizarMetodoPago();
 
     function cargarCarrito() {
         const saved = localStorage.getItem(CART_KEY);
@@ -44,6 +47,28 @@ window.addEventListener('scroll', () => {
         localStorage.setItem(CART_KEY, JSON.stringify(carrito));
     }
 
+    function cargarMetodoPago() {
+        const saved = localStorage.getItem(PAYMENT_KEY);
+        return saved ? saved : '';
+    }
+
+    function guardarMetodoPago() {
+        if (metodoPago) {
+            localStorage.setItem(PAYMENT_KEY, metodoPago);
+        }
+    }
+
+    function actualizarMetodoPago() {
+        const metodoPagoEl = document.getElementById('metodo-pago');
+        if (metodoPagoEl && metodoPago) {
+            metodoPagoEl.value = metodoPago;
+        }
+    }
+
+    window.cambiarMetodoPago = function(value) {
+        metodoPago = value;
+        guardarMetodoPago();
+    }
     window.agregarAlCarrito = function(nombre, precio) {
         const index = carrito.findIndex(item => item.nombre === nombre);
         if (index >= 0) {
@@ -153,12 +178,22 @@ window.addEventListener('scroll', () => {
             return;
         }
 
+        const metodoPagoEl = document.getElementById('metodo-pago');
+        if (!metodoPagoEl) return;
+
+        const metodoPagoTexto = metodoPagoEl.value;
+        if (!metodoPagoTexto) {
+            alert('Por favor, selecciona el método de pago.');
+            metodoPagoEl.focus();
+            return;
+        }
+
         const total = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0);
         const productosTexto = carrito
             .map(item => `- ${item.nombre} x${item.cantidad}: $${(item.precio * item.cantidad).toFixed(2)}`)
             .join('\n');
 
-        const recibo = `*Recibo de compra*\n\n*Productos:*\n${productosTexto}\n\n*Total:* $${total.toFixed(2)}\n*Dirección de envío:* ${direccionTexto}\n*Talla:* ${tallaTexto}`;
+        const recibo = `*Recibo de compra*\n\n*Productos:*\n${productosTexto}\n\n*Total:* $${total.toFixed(2)}\n*Dirección de envío:* ${direccionTexto}\n*Talla:* ${tallaTexto}\n*Método de pago:* ${metodoPagoTexto}`;
         const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(recibo)}`;
 
         window.open(url, '_blank');

@@ -14,7 +14,7 @@ html {
 --color-letras:#333333;
 --color-fondo:#f4f4f4;
 --color-card:rgb(214, 212, 200);
---color-cta:#00A36C;
+--color-cta:#01704b;
 --color-carrito:#0A2540;
 
 }
@@ -425,7 +425,7 @@ nav ul li a:hover {
 }
 
 .card {
-    background: var(--color-card);
+    background: #93caee;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -772,14 +772,20 @@ nav ul li a:hover {
     color: #34495e;
 }
 
-#direccion-envio {
+#direccion-envio,
+#talla-zapato,
+#metodo-pago {
     width: 100%;
-    min-height: 90px;
     padding: 12px;
     border-radius: 12px;
     border: 1px solid #d2d2d2;
-    resize: vertical;
     font-family: inherit;
+    font-size: 1rem;
+}
+
+#direccion-envio {
+    min-height: 90px;
+    resize: vertical;
 }
 
 .carrito-total {
